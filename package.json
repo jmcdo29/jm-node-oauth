@@ -13,8 +13,7 @@
   },
   "keywords": [
     "oauth",
-    "node",
-    "passport"
+    "node"
   ],
   "author": "Jay McDoniel",
   "license": "MIT",

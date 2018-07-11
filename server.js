@@ -6,8 +6,6 @@ const cookieParser = require('cookie-parser');
 const helmet = require('helmet');
 const logger = require('morgan');
 
-console.log(process.env.NODE_ENV);
-
 const app = express();
 
 app.use(helmet());
