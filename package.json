@@ -1,0 +1,43 @@
+{
+  "name": "node-oauth-jm",
+  "version": "0.0.0",
+  "description": "An app to understand using oauth via passport and node.js",
+  "main": "server.js",
+  "engines": {
+    "npm": ">=6.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "devstart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "oauth",
+    "node",
+    "passport"
+  ],
+  "author": "Jay McDoniel",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-session-knex": "^1.4.0",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.6",
+    "helmet": "^3.12.1",
+    "knex": "^0.15.0",
+    "morgan": "^1.9.0",
+    "objection": "^1.1.10",
+    "pg": "^7.4.3",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmcdo29/jm-node-oauth"
+  }
+}

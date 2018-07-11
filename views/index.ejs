@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <title>JM Node Authentication</title>
+  <style>
+    body {
+      padding-top: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>
+        <span class="fa fa-lock">Node Authentication</span>
+      </h1>
+      <% if (error.length > 0) { %>
+        <div class="alert alert-danger">
+          <%= error %>
+        </div>
+      <% } %>
+      <p>Login or Register with:</p>
+      <a href="/local/login" class="btn btn-default">
+        <span class="fa fa-user"></span> Local Login
+      </a>
+      <a href="/local/signup" class="btn btn-default">
+        <span class="fa fa-user"></span> Local Signup
+      </a>
+      <a href="/facebook/auth" class="btn btn-primary">
+        <span class="fa fa-facebook"></span> Facebook
+      </a>
+      <a href="/google/auth" class="btn btn-danger">
+        <span class="fa fa-google-plus"></span> Google
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>

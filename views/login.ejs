@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JM Node Authentication</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <style>
+    body {
+      padding-top: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1>
+        <span class="fa fa-sign-in">Login</span>
+      </h1>
+      <% if (message.length > 0) { %>
+        <div class="alert alert-danger">
+          <%= message %>
+        </div>
+      <% } %>
+          <form action="/local/login" method="post">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="text" class="form-control" name="email">
+            </div>
+            <div class="formgroup">
+              <label>Password</label>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <button type="submit" class="btn btn-warning btn-lg">Login</button>
+          </form>
+
+          <hr>
+          <p>Need an account?
+            <a href="/local/signup">Signup!</a>
+          </p>
+          <p>Or go
+            <a href="/">home</a>.
+          </p>
+    </div>
+  </div>
+</body>
+
+</html>
