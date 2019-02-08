@@ -29,7 +29,7 @@
     "express-session": "^1.15.6",
     "helmet": "^3.12.1",
     "knex": "^0.15.0",
-    "morgan": "^1.9.0",
+    "morgan": "^1.9.1",
     "objection": "^1.1.10",
     "pg": "^7.4.3",
     "request": "^2.87.0",
